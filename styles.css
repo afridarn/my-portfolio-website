@@ -1,0 +1,50 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.text-yellow {
+  color: #fce700;
+}
+
+.bg-blue {
+  background-color: #3330e4;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.button-outline-yellow {
+  border: 2px solid #fce700;
+  color: #fce700;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.button-outline-yellow:hover {
+  background: #fce700;
+  color: #ffffff;
+}
+
+.img-rounded {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border-radius: 50%;
+}
+
+.bg-work {
+  background-image: url("asset/img/bg-work.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  image-rendering: crisp-edges;
+  min-height: 75vh;
+}
