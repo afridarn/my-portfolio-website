@@ -22,8 +22,10 @@
       crossorigin="anonymous"
     />
 
+    <!-- External CSS-->
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <div class="min-vh-100 bg-blue">
       <!-- Navbar -->
@@ -52,24 +54,25 @@
           >
             <ul class="navbar-nav gap-5">
               <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="#"
+                <a class="nav-link text-light" aria-current="page" href=""
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">About</a>
+                <a class="nav-link text-light" href="#section-about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Portfolio</a>
+                <a class="nav-link text-light" href="#section-experiences">Experiences</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Contact</a>
+                <a class="nav-link text-light" href="#section-tugas">Tugas</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
+      <!-- Section Home -->
       <div class="container d-flex" style="min-height: 90vh">
         <div class="row align-items-center w-100">
           <div class="col-lg-6">
@@ -80,7 +83,9 @@
               Hello, I'm <span class="text-yellow">Afrida Rohmatin N</span>,
               <br />welcome to my journey
             </p>
-            <button type="button" class="button-outline-yellow">Hire Me</button>
+            <a href="mailto:afridarohmatin@gmail.com">
+              <button type="button" class="button-outline-yellow">Hire Me</button>
+            </a>
           </div>
           <div class="col-lg-6">
             <img
@@ -93,62 +98,148 @@
       </div>
     </div>
 
-    <div class="bg-work position-relative">
+    <!-- Section About -->
+    <div class="bg-work position-relative" id="section-about">
       <div class="position-absolute top-50 start-50 bg-light content">
         <h1 class="text-center mt-3 text-blue ls-2">About Me</h1>
         <p class="mx-5 mt-5 text-center">
           I am a third year Information Technology student with a passion for
-          web development. I have experience in back-end development and enjoy
+          <span class="text-yellow">web development</span>. I have experience in <span class="text-yellow">back-end development</span> and enjoy
           working in a team environment. In addition to my technical skills, I
           also have strong critical thinking and problem-solving abilities,
           which I believe are essential for success in the field of IT. In the
           future, I hope to continue to grow and learn.
         </p>
-        <button
-          type="button"
-          class="button-outline-yellow mt-3"
-          style="margin-left: 37%"
-        >
-          Download Resume
-        </button>
+        <a href="asset/doc/CV_Afrida Rohmatin Nuriyah.pdf" download="tes">
+          <button
+            type="button"
+            class="button-outline-blue mt-3"
+            style="margin-left: 37%"
+          >
+            Download Resume
+          </button>
+      </a>
       </div>
     </div>
 
-    <div class="container d-flex flex-column min-vh-100">
+    <!-- Section Experiences -->
+    <div class="container d-flex flex-column" style="min-height: 70vh;" id="section-experiences">
       <h1 class="mt-5">Experiences</h1>
-      <div class="row w-100" style="min-height: 75vh">
+      <div class="row w-100" style="min-height: 65vh">
         <div class="col-lg-4 my-auto">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-blue">
+          <ul class="list-group list-group-flush" id="cursor-pointer">
+            <li class="list-group-item text-blue" id="title-1">
               Back End Developer Internship
             </li>
-            <li class="list-group-item text-blue">
+            <li class="list-group-item" id="title-2">
               Secretary of Research and Technology Department
             </li>
-            <li class="list-group-item text-blue">
+            <li class="list-group-item" id="title-3">
               Expert Staff of Secretarial Division
             </li>
           </ul>
         </div>
-        <div class="col-lg-8">
-          <div class="card">
+        <div class="col-lg-7 ms-5">
+          
+          <div class="card" id="experiences-1">
             <div class="card-body">
               <h5 class="card-title text-blue">Back End Developer Internship</h5>
+              <p class="fw-bold">PT Adma Digital Solusi <span class="text-muted float-end fs-6 fw-normal">Aug - Dec 2022</span></p>
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                quod, voluptas, quia, voluptates quas voluptatibus quae
-                voluptatum quibusdam quidem quos nesciunt. Quisquam, quae
-                voluptates. Quisquam, quae voluptates.
+                <ul class="fw-lighter">
+                  <li> Involvement in CRUD operations for various entities, including web back-end and API services using Laravel Framework</li>
+                  <li> Contribution to slicing design for mobile and web views using Bootstrap</li>
+                  <li> Work on the administrator side of the Super Apps, Halo Coach, and Scheduling Content project</li>
+                  <li> Collaboration with front-end and UI/UX teams to ensure a seamless user experience.</li>
+                </ul>
               </p>
+            </br>
+              <p>Portfolio</p>
+              <a href="https://sc.admasolusi.space" class="mt-0">Scheduling Content</a>
+          </br>
+              <a href="https://halocoach.admasolusi.space">Admin Tools Halo Coach</a>
+            </div>
+          </div>
+
+          <div class="card d-none" id="experiences-2">
+            <div class="card-body">
+              <h5 class="card-title text-blue">Secretary of Research and Technology Department</h5>
+              <p class="fw-bold">Himpunan Mahasiswa Teknologi Informasi <span class="text-muted float-end fs-6 fw-normal">Feb 2022 - Feb 2023</span></p>
+              <p class="card-text">
+                <ul class="fw-lighter">
+                  <li> Responsible for creating key performance indicators (KPIs), project budgets (RAB), and events for the Research and Technology department</li>
+                  <li> Successfully organized events such as PKTI-TD, IoT Club, and Cyber Security Club</li>
+                  <li> Experience working with department heads and staff to plan and execute events</li>
+                  <li> Take minutes at every meeting and act as a liaison between the department and the treasurer of HMIT to discuss proposals and project budgets</li>
+                  <li> Strong communication skills and attention to detail.</li>
+                </ul>
+              </p>
+            </br>
+            </div>
+          </div>
+
+          <div class="card d-none" id="experiences-3">
+            <div class="card-body">
+              <h5 class="card-title text-blue">Expert Staff of Secretarial Division</h5>
+              <p class="fw-bold">A Renewable Agent (ARA) 3.0 <span class="text-muted float-end fs-6 fw-normal">Jan 2022 - Jun 2023</span></p>
+              <p class="card-text">
+                <ul class="fw-lighter">
+                  <li> Help provide solutions to the heads</li>
+                  <li> Assist with the open recruitment process, including creating registration forms, recording applicant data, interviewing applicants, and serving as the contact person for staff acceptance announcements</li>
+                  <li> Help record attendance data for ARA team members and participants</li>
+                  <li> Verify and record participant data for the ARA 2022 event</li>
+                  <li> Create official reports for webinar events</li>
+                  <li> Distribute certificates to participants</li>
+                  <li> Contribute to the smooth and efficient running of the secretarial division and the success of the ARA 3.0 team.</li>
+                </ul>
+              </p>
+            </br>
             </div>
           </div>
       </div>
     </div>
+    </div>
+
+    <!-- Section Tugas -->
+    <div class="d-flex flex-column bg-yellow" style="min-height: 50vh;" id="section-tugas">
+      <div style="margin-left: 7%;">
+        <h1 class="mt-5 text-center text-blue">Tugas Analisis</h1>
+        <div class="row align-items-top w-100">
+          <div class="content-tugas">
+            <div class="card-tugas">
+                  <p class="title-tugas">Tugas Analisis 1</p>
+                  <a class="text-tugas" href="https://bit.ly/TugasAnalisis1">bit.ly/TugasAnalisis1</a>
+            </div>
+            <div class="card-tugas">
+                  <p class="title-tugas">Tugas Analisis 2</p>
+                  <a class="text-tugas" href="https://bit.ly/TugasAnalisis2">bit.ly/TugasAnalisis2</a>
+            </div>
+         </div>
+      </div>
+    </div>
+
+
     <!-- Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+        const titles = document.querySelectorAll("[id^='title-']");
+        const experiences = document.querySelectorAll("[id^='experiences-']");
+
+        titles.forEach((title, index) => {
+          title.addEventListener("click", () => {
+            experiences.forEach((exp) => exp.classList.add("d-none"));
+            experiences[index].classList.remove("d-none");
+
+            titles.forEach((t) => t.classList.remove("text-blue"));
+            title.classList.add("text-blue");
+          });
+        });
+    </script>
+    
   </body>
 </html>
