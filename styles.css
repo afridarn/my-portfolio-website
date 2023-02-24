@@ -20,6 +20,24 @@ body {
   background-color: #fce700;
 }
 
+.bg-quote {
+  background-image: url("asset/img/bg-quote.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  image-rendering: crisp-edges;
+  min-height: 65vh;
+}
+
+.bg-work {
+  background-image: url("asset/img/bg-work.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  image-rendering: crisp-edges;
+  min-height: 75vh;
+}
+
 .ls-2 {
   letter-spacing: 2px;
 }
@@ -58,21 +76,29 @@ body {
   color: #ffffff;
 }
 
+.button-fill-blue {
+  background-color: #3330e4;
+  color: white;
+  padding: 10px 20px;
+  border-color: #3330e4;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.button-fill-blue:hover {
+  background: #ffffff;
+  color: #3330e4;
+}
+
 .img-rounded {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 75%;
   border-radius: 50%;
-}
-
-.bg-work {
-  background-image: url("asset/img/bg-work.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  image-rendering: crisp-edges;
-  min-height: 75vh;
 }
 
 .content {

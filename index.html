@@ -9,66 +9,50 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"/>
 
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
 
     <!-- External CSS-->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8361b81c9d.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <div class="min-vh-100 bg-blue">
+
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container-fluid mt-3">
-          <a
-            class="navbar-brand fw-bold text-yellow ls-2"
-            href="#"
-            style="margin-left: 7%"
-            >AFRIDA.</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+          <a class="navbar-brand fw-bold text-yellow ls-2" href="" style="margin-left: 7%">AFRIDA.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-end me-5"
-            id="navbarNav"
-          >
+
+          <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
             <ul class="navbar-nav gap-5">
               <li class="nav-item">
-                <a class="nav-link nav-hover text-light" aria-current="page" href=""
-                  >Home</a
-                >
+                <a class="nav-link text-light" aria-current="page" href="">Home</a>
               </li>
-              <li class="nav-item nav-hover">
+              <li class="nav-item">
                 <a class="nav-link text-light" href="#section-about">About</a>
               </li>
-              <li class="nav-item nav-hover">
+              <li class="nav-item">
                 <a class="nav-link text-light" href="#section-experiences">Experiences</a>
               </li>
-              <li class="nav-item nav-hover">
+              <li class="nav-item">
                 <a class="nav-link text-light" href="#section-tugas">Tugas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#section-contact">Contact</a>
               </li>
             </ul>
           </div>
+
         </div>
       </nav>
 
@@ -87,15 +71,14 @@
               <button type="button" class="button-outline-yellow">Hire Me</button>
             </a>
           </div>
+
           <div class="col-lg-6">
-            <img
-              src="asset/img/myself.jpg"
-              alt="My Photo"
-              class="img-rounded"
-            />
+            <img src="asset/img/myself.jpg" alt="My Photo" class="img-rounded"/>
           </div>
+
         </div>
       </div>
+
     </div>
 
     <!-- Section About -->
@@ -110,12 +93,8 @@
           which I believe are essential for success in the field of IT. In the
           future, I hope to continue to grow and learn.
         </p>
-        <a href="asset/doc/CV_Afrida Rohmatin Nuriyah.pdf" download="tes">
-          <button
-            type="button"
-            class="button-outline-blue mt-3"
-            style="margin-left: 37%"
-          >
+        <a href="asset/doc/CV_Afrida Rohmatin Nuriyah.pdf" download="CV Afrida Rohmatin Nuriyah">
+          <button type="button" class="button-outline-blue mt-3" style="margin-left: 37%">
             Download Resume
           </button>
       </a>
@@ -216,6 +195,62 @@
             </div>
          </div>
       </div>
+      </div>
+    </div>
+
+    <!-- Section Contact and Fetch API -->
+    <div class="mw-100" style="min-height: 65vh;" id="section-contact">
+        <div class="row" style="min-height: max-content; --bs-gutter-x: 0;">
+            <div class="col-lg-5 bg-quote d-flex flex-column justify-content-center">
+                <h1 class="text-light text-start ms-5" id="random-quote"></h1>
+                <button type="button" class="button-fill-blue mt-3" style="margin-left: 7%; width: 200px;" id="getQuote">
+                    Get Quote
+                </button>
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center mx-5">
+                <h1 class="my-4">Contact Me</h1>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fa fa-envelope me-4"></i>Email
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          afridarohmatin@gmail.com
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <i class="fa fa-phone me-4"></i>Phone Number
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            +62 81547123069
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <i class="fa fa-cat me-4"></i>GitHub
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            github.com/afridarn
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>            
+        </div>
+
     </div>
 
 
@@ -238,6 +273,19 @@
             titles.forEach((t) => t.classList.remove("text-blue"));
             title.classList.add("text-blue");
           });
+        });
+    </script>
+
+    <script>
+        const getQuote = document.getElementById("getQuote");
+        const randomQuote = document.getElementById("random-quote");
+
+        getQuote.addEventListener("click", () => {
+          fetch("https://api.quotable.io/random")
+            .then((response) => response.json())
+            .then((data) => {
+              randomQuote.innerHTML = data.content;
+            });
         });
     </script>
 
