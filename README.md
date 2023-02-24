@@ -1,15 +1,15 @@
 
-# Website Portofolio Afrida
+# Portfolio Website's Afrida
 
-Ini adalah repositori untuk tugas Basic Web Programming di Studi Independen Stechoq - Software Engineering. Repositori ini berisi tentang website portofolio yang dibuat oleh saya, Afrida.
+This is a repository for Basic Web Programming assignments at Stechoq Independent Studies - Software Engineering. This repository contains a portfolio website created by me, Afrida.
 
-## Deskripsi
-Website ini adalah sebuah website yang dibuat untuk menampilkan portofolio dan pengalaman kerja saya. Website ini dibangun dengan menggunakan teknologi HTML, CSS, dan JavaScript.
+## Description
+This website is a website created to display my portfolio and work experience. This website was built using HTML, CSS and JavaScript technology.
 
-## Cara Mengakses
-Untuk mengakses situs web ini, silahkan akses link berikut:
+## How to Access
+To access this website, please access the following link:
 https://afridarn.github.io/my-portfolio-website/
 
-## Kontak
-Jika ada pertanyaan mengenai repository ini dapat menghubungi saya di afridarohmatin@gmail.com
+## Contact
+If you have questions about this repository, you can contact me at afridarohmatin@gmail.com
 
